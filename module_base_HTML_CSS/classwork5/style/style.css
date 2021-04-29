@@ -1,0 +1,138 @@
+/* .title {
+	margin: 100px;
+	position: relative;
+}
+
+.title::after {
+	position: absolute;
+
+	content: '';
+	width: 20px;
+	height: 20px;
+	background-color: orange;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.block {
+	height: 150vh;
+	background-color: red;
+	position: relative;
+	top: 20px;
+}
+.block1 {
+	height: 150vh;
+	background-color: orange;
+}
+
+.block-item {
+	width: 200px;
+	height: 200px;
+	background-color: teal;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	bottom: 20px;
+} */
+
+.background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100vh;
+	width: 100%;
+	background-image: url(../img/background\ 1.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+header,
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.logotype {
+	display: flex;
+	color: white;
+
+	align-items: center;
+}
+.logotype-img {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 50px;
+	margin-right: 10px;
+}
+
+.logotype-title,
+.logotype-subtitle {
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+
+.logotype-subtitle {
+	font-size: 1.1rem;
+}
+
+.info-link {
+	color: white;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+header {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 150px;
+}
+
+.content-img {
+	margin-top: 20px;
+	/* width: 300px;
+	height: 220px; */
+	background-color: orange;
+}
+
+.content-img div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.content-img div img {
+	width: 100%;
+}
+.content-img div p {
+	color: whitesmoke;
+	font-size: 1rem;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+@media (max-width:768px){
+	html {
+		font-size: 13px;
+	}
+	.content{
+		justify-content: space-evenly;
+	}
+	header{
+		justify-content: space-evenly;
+	}
+}

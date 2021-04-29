@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.flex {
+	height: 100;
+	background-color: orange;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.flex-item {
+	background-color: red;
+	margin: 5px;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	padding-top: 35px;
+}

@@ -1,0 +1,28 @@
+/* * {
+	margin: 0;
+	padding: 0;
+} */
+
+/* .link {
+	color: red;
+}
+
+div {
+	height: 200px;
+	background-color: orange;
+	display: inline-block;
+} */
+
+.content {
+	height: 200px;
+	background-color: orange;
+	padding: 40px;
+	margin: 40px 100px 40px;
+}
+
+.second-content {
+	margin-top: 100px;
+	background-color: blue;
+	height: 200px;
+	color: white;
+}

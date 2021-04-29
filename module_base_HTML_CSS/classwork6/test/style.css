@@ -1,0 +1,33 @@
+.title:hover {
+	color: lawngreen;
+	transition: 0.5s ease-in-out;
+}
+
+.title::after {
+	background-color: red;
+	position: absolute;
+	content: '';
+}
+
+.block {
+	height: 200px;
+	background-color: red;
+	width: 200px;
+	margin: 0 auto;
+}
+.title {
+	color: red;
+}
+#login:focus {
+	color: green;
+	font-size: 26px;
+}
+#login {
+	color: red;
+	padding: 10px;
+	border-radius: 10px;
+}
+form {
+	display: flex;
+	flex-direction: column;
+}

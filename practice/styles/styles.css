@@ -1,0 +1,207 @@
+.card  {
+    display: grid;
+    grid-template-columns:15% 50% 35%;
+    width: 900px;
+    margin: 100px auto;
+}
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.card-info-h1 {
+    font-size: 22px;
+    font-family: 'DM Serif Display', serif;
+}
+.card-span {
+    color: #A5ADBB;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-info-text {
+    color: #6E798C;
+    line-height: 25px;
+    font-family:'Open Sans', sans-serif;
+    content:normal;
+}
+.card-servise {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.card-servise-icon {
+    margin-right: 16px;
+    font-size: 22px;
+}
+.card-servise-item {
+    color:#6E798C;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-servise-date {
+    color: #081F32;
+    font-weight: bold;
+}
+.card-img {
+    content:url(../img/Course\ Image.png);
+}
+.card-button-phone {
+    width: 101px;
+    height: 37px;
+    background-color: white;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    display: none;
+    color:#FF6188;
+}
+
+
+@media (max-width:900px) {
+    .card {
+        background-image: url(../img/Mini-card\ 1.png);
+        background-position: center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+        Width: 240px;
+        Height: 224px;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .card-span{
+        display: none;
+    }
+    .card-info-text {
+        display: none;
+    }
+    .card-servise {
+        display: none;
+    }
+    .card-img{
+        display: none;
+    }
+    .card-info {
+        margin: 0px;
+    }
+    .card-button-phone{
+        display: inline-block;
+        grid-column: 1/2;
+        grid-row: 2;
+        margin-left: 123px;
+        margin-top: 35px;
+    }
+    .card-info-h1 {
+        color: white;
+        font-size: 26px;
+        grid-column: 1/2;
+        grid-row: 1;
+        margin-top: 20px;
+        margin-left: 12px;
+        
+    }
+}
+
+.card-two  {
+    display: grid;
+    grid-template-columns:15% 50% 35%;
+    width: 900px;
+    margin: 100px auto;
+}
+.card-info-two {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.card-info-h1-two {
+    font-size: 22px;
+    font-family: 'DM Serif Display', serif;
+}
+.card-span-two {
+    color: #A5ADBB;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-info-text-two {
+    color: #6E798C;
+    line-height: 25px;
+    font-family:'Open Sans', sans-serif;
+    content:normal;
+}
+.card-servise-two {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.card-servise-icon-two {
+    margin-right: 16px;
+    font-size: 22px;
+}
+.card-servise-item-two {
+    color:#6E798C;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-servise-date-two {
+    color: #081F32;
+    font-weight: bold;
+}
+.card-img-two {
+    content:url(../img/Course\ Image\ two.png);
+}
+.card-button-phone-two {
+    width: 101px;
+    height: 37px;
+    background-color: white;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    display: none;
+    color:#FF6188;
+}
+
+
+@media (max-width:900px) {
+    .card-two {
+        background-image: url(../img/Mini-card\ 2.png);
+        background-position: center;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+        Width: 240px;
+        Height: 224px;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .card-span-two{
+        display: none;
+    }
+    .card-info-text-two {
+        display: none;
+    }
+    .card-servise-two {
+        display: none;
+    }
+    .card-img-two{
+        display: none;
+    }
+    .card-info-two {
+        margin: 0px;
+    }
+    .card-button-phone-two{
+        display: inline-block;
+        grid-column: 1/2;
+        grid-row: 2;
+        margin-left: 123px;
+        margin-top: 35px;
+    }
+    .card-info-h1-two {
+        color: white;
+        font-size: 26px;
+        grid-column: 1/2;
+        grid-row: 1;
+        margin-top: 20px;
+        margin-left: 12px;
+        
+    }
+}

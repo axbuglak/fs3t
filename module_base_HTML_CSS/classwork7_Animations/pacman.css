@@ -1,0 +1,140 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	background-color: #855a5a85;
+	height: 100vh;
+	padding: 10px;
+}
+
+.pacman-top {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	transform: rotate(-35deg);
+	transform-origin: bottom;
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+	background-color: yellow;
+	animation: movePacmanTop 1s infinite linear;
+}
+
+.pacman-top::before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	right: 50px;
+	width: 20px;
+	height: 20px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.pacman-bottom {
+	width: 200px;
+	height: 100px;
+	transform: rotate(35deg);
+	transform-origin: top;
+	border-radius: 0 0 50% 50%/ 0 0 100% 100%;
+	background-color: yellow;
+	animation: movePacmanBottom 1s infinite linear;
+}
+
+@keyframes movePacmanTop {
+	0% {
+		transform: rotate(-35deg);
+	}
+	50% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(-35deg);
+	}
+}
+@keyframes movePacmanBottom {
+	0% {
+		transform: rotate(35deg);
+	}
+	50% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(35deg);
+	}
+}
+
+.pacman {
+	/* animation: pacman 20s infinite linear; */
+	position: absolute;
+}
+
+@keyframes pacman {
+	0% {
+		top: 0;
+		left: 0;
+	}
+	25% {
+		top: 0;
+		left: 80vw;
+		transform: rotate(0deg);
+	}
+	26% {
+		transform: rotate(90deg);
+	}
+	50% {
+		top: 50vh;
+		left: 80vw;
+		transform: rotate(90deg);
+	}
+	51% {
+		transform: rotate(180deg);
+	}
+	75% {
+		top: 50vh;
+		left: 0;
+		transform: rotate(180deg);
+	}
+	76% {
+		transform: rotate(270deg);
+	}
+	99% {
+		top: 0;
+		left: 0;
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.fruits {
+	background-image: url(https://st4.depositphotos.com/20838724/25590/v/600/depositphotos_255901082-stock-illustration-sliced-watermelon-fruit-vector-icon.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 70px;
+	left: 20%;
+	animation: fruit 20s infinite linear;
+}
+
+@keyframes fruit {
+	0% {
+		opacity: 1;
+	}
+	4% {
+		opacity: 1;
+	}
+	6% {
+		opacity: 0;
+	}
+	99% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
