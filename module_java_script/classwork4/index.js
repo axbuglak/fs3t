@@ -1,75 +1,66 @@
-/* ЗАДАНИЕ - 1
- * Написать функцию суммирования.
- * Принимает аргументы: первое число и второе число
- * Возвращаемое функцией значение: сумма двух аргументов*/
-//  function sum (first, second) {
-//      let result = first + second
-//      return result
-//  }
-//  console.log(sum(2, 3));
-/* ЗАДАНИЕ - 2
- * Написать функцию которая будет принимать два аргумента - число с которого НАЧАТь отсчет и число до которого нужно досчитать.
- * Под отсчетом имеется в виду последовательный вывод чисел в консоль с увеличением на единицу.
- */
-// function showNum(start = 1, end ) {
-//     if (!end) return nun;
-//     for(let num = start; num <= end; num++){
-//         console.log(num);
-//     }
-// }
-// showNum(1, 10)
-/* ЗАДАНИЕ - 3
- *   Написать функцию, которая будет суммировать ВСЕ числа, которые будут переданы ей в качестве аргументов.
- * */
-// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// function calc (){   
+// function calcSum(first, second = 0) {
+// 	if (!first) {
+// 		return null;
+// 	}
+// 	const result = first + second;
+// 	return result;
 // }
 
-/* ЗАДАНИЕ - 4
- * Написать функцию, которая проверяет количество переданных агрументов.
- * Принимаемые аргументы - три числа
- * Если число переданых аргументов не равно трем - выводить сообщение с текстом "Функция вызвана с *КОЛИЧЕСТВО ПЕРЕДАННЫХ АРГУМЕНТОВ* параметрами!"
- * */
+// function calcSum2() {
+// 	return 2 + 3;
+// // }
+// const calcSum1 = first => {
+// 	if (!first) return null;
 
-/* ЗАДАНИЕ - 5
- * Написать функцию calculateResidue, которая будет выводить в консоль ВСЕ числа в заданом диапазоне, которые кратны третьему числу.
- * Аргументы функции:
- *   1) число С которого начинается диапазон (включительно)
- *   2) число которым диапазон заканчивается (включительно)
- *   3) число КРАТНЫЕ КОТОРОМУ нужно вывести в консоль
- * Возвращаемое значение - отсутствует
- * В идеале разделить это на 3 фнукциию
- * 1 - спрашивает два числа(диапазон),
- * 2 - спрашивает третье число и выводит в консоль результаты,
- * 3 - сборная солянка из предыдущих двух.
- * */
-/* ЗАДАНИЕ - 6
- * Написать функцию getPrice(), которая будет вычислять стоимость бургера в зависимости от того какой у него размер и начинка.
- * Размер и начинку определяет пользователь. УСЛОВНОЕ УПРОЩЕНИЕ - он умеет вводить ТОЛЬКО имена констант, т.е. проверка на некорректность введения данных не требуется.
- *
- * Размеры и начинки записаны в константы:*/
-// const SIZE_SMALL = {
-// 	name: 'small',
-// 	price: 15,
-// 	cal: 250,
+// 	const result = first % 2 === 0;
+// 	return result;
 // };
-// const SIZE_LARGE = {
-// 	name: 'large',
-// 	price: 25,
-// 	cal: 340,
-// };
-// const STUFFING_CHEASE = {
-// 	name: 'chease',
-// 	price: 4,
-// 	cal: 25,
-// };
-// const STUFFING_SALAD = {
-// 	name: 'salad',
-// 	price: 5,
-// 	cal: 5,
-// };
-// const STUFFING_BEEF = {
-// 	name: 'beef',
-// 	price: 10,
-// 	cal: 50,
-// };
+
+// console.log(calcSum1(22));
+// const userNUm = +prompt('sdadas');
+// const firstRequest = calcSum();
+// console.log(firstRequest);
+
+// const a = 1;
+const test = [];
+let question = prompt('something');
+
+while (question !== '') {
+	test.push(question);
+	question = prompt('again');
+}
+
+function render(data) {
+	const list = document.createElement('ul');
+	data.forEach(function (item) {
+		let elementList = document.createElement('li');
+		elementList.textContent = item;
+		list.append(elementList);
+	});
+
+	document.body.append(list);
+}
+
+render(test);
+
+// const result = arrayNum.reduce(function (accumulator, item) {
+// 	return accumulator + item;
+// });
+// alert(`К оплате сумма: ${result}грн.`);
+// console.log('эдемент массива ===>', arrayNum[2]);
+// console.log('длина нашего массива', arrayNum.length);
+// for (let i = 0; i < arrayNum.length; i++) {
+// 	console.log(arrayNum[i]);
+// }
+// console.log('массив до', arrayNum);
+// arrayNum.pop(); // метод удаляет эл массива в конце
+// arrayNum.push('last child');  // метод добавляет эл массива в конец
+// arrayNum.shift(); // метод удаляет эл массива в начале
+// arrayNum.unshift('gogi'); // метод добавлчет эл массива в начале
+// console.log('массив после', arrayNum);
+
+// arrayNum.forEach(function (element, index) {
+// 	console.log(index);
+// });
+// console.log(arrayNum);
+// console.log(arrayNum);

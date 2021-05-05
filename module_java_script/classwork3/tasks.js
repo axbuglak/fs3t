@@ -1,22 +1,22 @@
 /* ЗАДАНИЕ - 1
  * Пользователь должен ввести Имя, Фамилию и свой возраст.
  * В случае если он вводит не соответствующие данные, нужно переспрашивать его, ДО ТЕХ ПОР ПОКА данные не будут введены корректно.*/
-// let name = prompt("ваше имя");
-// while (name === null || name === '' || !isNaN(name)){
-//     name = prompt("Введите ваше имя")
-// }
-// let surname = prompt("вааша фамилия");
-// while (surname === null || surname === '' || !isNaN(surname)){
-//     surname = prompt("Введите вашу фамилию коректно")
-// }
-// let age = +prompt("ваш возвраст");
-// while (age === null || age === '' || isNaN(age)){
-//     prompt("Введите ваш возвраст")
-// }
+
+
+
 /* ЗАДАНИЕ - 2
  * Вывести в консоль первые 147 непарных чисел.
- *   ПРОДВИНУТАЯ СЛОЖНОСТЬ - не выводить в консоль те числа, которые делятся на 5.
+ *  не выводить в консоль те числа, которые делятся на 5.
  * */
+
+// for (let i = 1; i <= 294; i++) {
+// 	if (i % 2 !== 0) {
+// 		if ( i % 5 !== 0) {
+// 			console.log(i)
+// 		}
+// 	}
+// }
+
 /* ЗАДАНИЕ - 3
  * Осуществляем проверку на корректность введения данных.
  * Пользователь должен ввести два числа операцию.
@@ -28,30 +28,8 @@
  *   - - отнимание
  *   / - деление
  * */
-// let numberOne = +prompt("введи первое число")
-// while(numberOne === null || numberOne === "" || isNaN(numberOne)){
-//     numberOne = prompt("Введи число!")
-// }
-// let numberTwo = +prompt("введи второе число")
-// while(numberTwo === null || numberTwo === "" || isNaN(numberTwo)){
-//     numberTwo = +prompt("Введи число!")
-// }
-// let op = prompt("введите действие, которое хотите выполнить")
-// while(op !== "+" && op !== "*" && op !== "-" && op !== "/"){
-//     op = prompt("Введи операцию!!")
-// }
-// let resolt
-// switch (op){
-//     case "+":resolt = numberOne + numberTwo;
-//     break;
-//     case "-":resolt = numberOne - numberTwo;
-//     break;
-//     case "*":resolt = numberOne * numberTwo;
-//     break;
-//     case "/":resolt = numberOne / numberTwo;
-//     break;
-// }
-// let(resolt)
+
+
 
 
 /* ЗАДАНИЕ - 4
@@ -66,24 +44,7 @@
 *    80 - 89 -> B
 *   90 - 100 -> A
 * */
-let mark = +prompt("введите оценку")
-while(mark !== "") {
-    if(mark <= 59){
-        console.log("F");
-    }
-    else if(mark >= 60 && mark <= 69){
-        console.log("D");
-    }
-    else if(mark >= 70 && mark <= 79){
-        console.log("C");
-    }
-    else if(mark >= 80 && mark <= 89){
-        console.log("B");
-    }
-    else {
-        console.log("A");
-    }
-}
+
 /* ЗАДАНИЕ - 5
 * Написать имитацию заполнения школьного журнала.
 * В качестве результата должна быть одна длинная строка со всеми учениками и их оценками в формате:
