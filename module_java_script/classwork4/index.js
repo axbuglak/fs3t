@@ -22,26 +22,27 @@
 // console.log(firstRequest);
 
 // const a = 1;
-const test = [];
-let question = prompt('something');
 
-while (question !== '') {
-	test.push(question);
-	question = prompt('again');
-}
+// const test = [];
+// let question = prompt('something');
 
-function render(data) {
-	const list = document.createElement('ul');
-	data.forEach(function (item) {
-		let elementList = document.createElement('li');
-		elementList.textContent = item;
-		list.append(elementList);
-	});
+// while (question !== '') {
+// 	test.push(question);
+// 	question = prompt('again');
+// }
 
-	document.body.append(list);
-}
+// function render(data) {
+// 	const list = document.createElement('ul');
+// 	data.forEach(function (item) {
+// 		let elementList = document.createElement('li');
+// 		elementList.textContent = item;
+// 		list.append(elementList);
+// 	});
 
-render(test);
+// 	document.body.append(list);
+// }
+
+// render(test);
 
 // const result = arrayNum.reduce(function (accumulator, item) {
 // 	return accumulator + item;
