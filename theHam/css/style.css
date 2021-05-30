@@ -1,0 +1,105 @@
+body {
+	cursor: none;
+}
+/* Burger */
+.line {
+	width: 2em;
+	height: 3px;
+	background: white;
+	margin: 5px;
+	transition: all 0.5s ease-out;
+}
+.line:first-child {
+	width: 1em;
+}
+
+.line.top {
+	transform: rotate(45deg) translate(11px, 0px);
+	width: 2em;
+}
+.line.bot {
+	transform: rotate(-45deg) translate(10px, 0px);
+}
+.line.medium {
+	transform: translateX(-80px);
+	opacity: 0;
+}
+
+nav {
+	background: #2e2a2a;
+	min-height: 10vh;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 2em;
+}
+
+.hamburger {
+	cursor: pointer;
+	z-index: 2;
+}
+.nav-links {
+	position: fixed;
+	background: #2e2a2a;
+	height: 100vh;
+	width: 25%;
+	top: 0;
+	left: -800px;
+	flex-direction: column;
+	transition: all 0.5s ease-out;
+	pointer-events: none;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.nav-links.open {
+	z-index: 1;
+	left: 0;
+	pointer-events: all;
+}
+.nav-links li {
+	opacity: 0;
+	transform: translateY(-500px);
+}
+
+.nav-links li a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #fff;
+}
+.nav-links li:nth-child(1) {
+	transition: all 0.5s ease-out 0.2s;
+}
+.nav-links li:nth-child(2) {
+	transition: all 0.5s ease-out 0.5s;
+}
+.nav-links li:nth-child(3) {
+	transition: all 0.5s ease-out 0.8s;
+}
+
+li.fade {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+/* Cursor */
+
+.cursor {
+	width: 3rem;
+	height: 3rem;
+	/* background-image: url(https://www.meme-arsenal.com/memes/1332eaa342e7ed8679d2589bf65b0957.jpg); */
+	border: 2px solid black;
+	/* background-size: cover; */
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	transition: all 0.3s ease;
+	transition-property: background, transform;
+	transform-origin: 100% 100%;
+	z-index: 10;
+	/* backdrop-filter: blur(3px); */
+}

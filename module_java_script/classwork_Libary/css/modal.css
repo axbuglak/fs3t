@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	height: 300vh;
+}
+
+.wrapper {
+	margin-top: 50px;
+	text-align: center;
+}
+.open {
+	background-color: #2e2e2e;
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 28px;
+	border: none;
+	letter-spacing: 2px;
+	border-radius: 10px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	outline: none;
+	transition: background-color 0.5s ease-in-out;
+}
+
+.open:hover {
+	background-color: orange;
+}
+
+.modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	pointer-events: none;
+}
+
+.modal-overlay.active {
+	opacity: 1;
+	pointer-events: all;
+}
+.modal-overlay.active .modal-body {
+	transform: translateY(0);
+	/* transform: scale(1); */
+	/* transform: perspective(0) rotateX(0) translateY(0); */
+}
+
+.modal-body {
+	width: 30%;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	position: relative;
+	transform: translateY(-1000px);
+	/* transform: scale(0.1); */
+	/* transform: perspective(300px) rotateX(50deg) translateY(-250px); */
+	transition: transform 0.5s ease-in-out;
+}
+
+.head {
+	display: flex;
+	justify-content: space-between;
+}
+
+.head span {
+	background-color: #000;
+	padding: 10px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top-right-radius: 10px;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	line-height: 10px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+.head span:hover {
+	background-color: rgb(231, 200, 63);
+	color: #000;
+}
+
